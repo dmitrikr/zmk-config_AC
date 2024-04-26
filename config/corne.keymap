@@ -93,8 +93,8 @@
 //                            |  ALT   |   LWR   |   SPC   |       |  RET  |   BKSP  |   GUI   |
 //                            '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
-     &kp ESC         &kp T  &kp Q     &kp W    &kp E   &hm BSLH R       &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSPC
-     &hm LCTRL TAB   &kp A  &kp S     &kp S    &kp D   &kp F       &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+     &kp ESC    &kp Q     &kp W    &kp E   &kp R  &hm BSLH T       &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSPC
+     &hm LCTRL TAB   &kp A  &kp S     &kp D    &kp F   &kp G       &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
      &kp LSHFT       &kp Z  &kp X     &kp C    &kp V   &kp B       &kp N      &hm RBKT M     &kp COMMA  &kp DOT  &kp LBKT  &kp ENTER
                          &kp LWIN  &mo LWR  &kp SPACE              &kp SPACE  &mo RSE  &kp LALT
                         >;
