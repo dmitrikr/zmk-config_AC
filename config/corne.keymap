@@ -93,9 +93,9 @@
 //                            |  ALT   |   LWR   |   SPC   |       |  RET  |   BKSP  |   GUI   |
 //                            '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
-     &kp ESC   &kp T  &kp Q     &kp W    &kp E   &hm BSLH R         &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSPC
-     &hm LCTRL TAB   &kp A  &kp S     &kp S    &kp D   &kp F        &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-     &kp LSHFT &kp Z  &kp X     &kp C    &kp V   &kp B              &kp N      &hm RBKT M     &kp COMMA  &kp DOT  &kp LBKT  &kp ENTER
+     &kp ESC         &kp T  &kp Q     &kp W    &kp E   &hm BSLH R       &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSPC
+     &hm LCTRL TAB   &kp A  &kp S     &kp S    &kp D   &kp F       &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+     &kp LSHFT       &kp Z  &kp X     &kp C    &kp V   &kp B       &kp N      &hm RBKT M     &kp COMMA  &kp DOT  &kp LBKT  &kp ENTER
                          &kp LWIN  &mo LWR  &kp SPACE              &kp SPACE  &mo RSE  &kp LALT
                         >;
                 };
@@ -114,9 +114,9 @@
 //                               '--------+---------+----------'       '--------+--------+---------'
 
                         bindings = <
-   &kp LPAR     &kp RPAR    &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC          &kp N1     &kp N2   &kp N3   &kp MINUS     &kp KP_SLASH  &kp BSLH
-   &kp LG(GRAVE)   &kp F4    &kp LEFT   &kp UP    &kp RIGHT  &kp HOME       &kp N4     &kp N5   &kp N6   &kp KP_PLUS   &kp KP_ASTERISK    &kp LPAR
-   &kp LCTRL   &kp LC(N) &kp PG_UP  &kp DOWN  &kp PG_DN  &kp END            &kp N7     &kp N8   &kp N9   &kp EQUAL     &kp KP_COMMA    &kp RPAR
+   &kp LPAR      &kp RPAR   &kp LBKT   &kp RBKT  &kp LBRC   &kp RBRC       &kp N1     &kp N2   &kp N3   &kp MINUS     &kp KP_SLASH       &kp BSLH
+   &kp LG(GRAVE) &kp F4     &kp LEFT   &kp UP    &kp RIGHT  &kp HOME       &kp N4     &kp N5   &kp N6   &kp KP_PLUS   &kp KP_ASTERISK    &kp LPAR
+   &kp LCTRL     &kp LC(N)  &kp PG_UP  &kp DOWN  &kp PG_DN  &kp END        &kp N7     &kp N8   &kp N9   &kp EQUAL     &kp KP_COMMA       &kp RPAR
                                 &trans   &trans    &kp UNDER                         &kp DOT   &trans   &kp N0
                         >;
                 };
@@ -133,10 +133,10 @@
 //                             |    0   |   ADJ  |        |       |        |        |        |
 //                             '--------+--------+--------'       '--------+--------+--------'
                         bindings = <
-   &kp GRAVE  &kp EXCL  &kp AT &kp HASH &kp DLLR &kp PRCNT           &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6
-   &kp CRRT  &kp AMPS    &kp SQT &kp DQT  &kp COLN &kp  SEMI         &kp F7  &kp F8  &kp F9  &kp F10 &kp F11 &kp F12
-   &kp UNDER  &kp PIPE    &kp NUBS &kp LT &kp GT  &kp  QMARK         &kp NUHS  &kp TILDE  &kp TILDE2  &trans  &trans  &trans
-                              &kp         &mo ADJ   &trans           &trans  &trans  &trans
+   &kp GRAVE  &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT        &kp F1    &kp F2     &kp F3      &kp F4  &kp F5  &kp F6
+   &kp CRRT   &kp AMPS  &kp SQT  &kp DQT  &kp COLN &kp SEMI         &kp F7    &kp F8     &kp F9      &kp F10 &kp F11 &kp F12
+   &kp UNDER  &kp PIPE  &kp NUBS &kp LT   &kp GT   &kp QMARK        &kp NUHS  &kp TILDE  &kp TILDE2  &trans  &trans  &trans
+                              &trans         &mo ADJ   &trans           &trans  &trans  &trans
                         >;
                 };
 
