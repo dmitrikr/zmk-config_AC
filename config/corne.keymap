@@ -77,7 +77,7 @@
             #binding-cells = <1>;
             wait-ms = <20>;
             tap-ms = <40>;
-            bindings  = <&macro_tap &kp INT3  &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings  = <&macro_tap &kp INT3  &kp KP_N1>;
         };
 
         kpdoot: kpdoot {
@@ -135,7 +135,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LSHFT     &trans        &kp LEFT      &kp UP        &kp RIGHT     &kp HOME          &kp EQUAL     &kp N4        &kp N5        &kp N6        &kp KP_PLUS   &kp BSLH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LG(GRAVE) &kx KP_N1     &kp PG_UP     &kp DOWN      &kp PG_DN     &kp END           &kp COMMA     &kp N7        &kp N8        &kp N9        &kp LPAR      &kp RPAR
+     &kp LG(GRAVE) &kx           &kp PG_UP     &kp DOWN      &kp PG_DN     &kp END           &kp COMMA     &kp N7        &kp N8        &kp N9        &kp LPAR      &kp RPAR
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                                &kp LALT      &trans        &kp UNDER         &kp DOT       &trans        &hm LALT N0
 //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
