@@ -72,12 +72,12 @@
             bindings  = <&macro_press &kp LALT>, <&macro_tap &macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>, <&macro_release &kp LALT>;
         };
 
-        kppnd: kppnd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <60>;
+        kppnd: kx {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <20>;
             tap-ms = <40>;
-            bindings  = <&macro_press &kp LALT>, <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>, <&macro_release &kp LALT>;
+            bindings  = <&macro_tap &kp INT3  &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
         };
 
         kpdoot: kpdoot {
@@ -133,9 +133,9 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp LPAR      &kp RPAR      &kp LBKT      &kp RBKT      &kp LBRC      &kp RBRC          &kp KP_ASTERISK  &kp N1     &kp N2        &kp N3        &kp MINUS     &kp KP_SLASH       
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LSHFT     &tog DEF      &kp LEFT      &kp UP        &kp RIGHT     &kp HOME          &kp EQUAL     &kp N4        &kp N5        &kp N6        &kp KP_PLUS   &kp BSLH
+     &kp LSHFT     &trans        &kp LEFT      &kp UP        &kp RIGHT     &kp HOME          &kp EQUAL     &kp N4        &kp N5        &kp N6        &kp KP_PLUS   &kp BSLH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LG(GRAVE) &tog RUKB     &kp PG_UP     &kp DOWN      &kp PG_DN     &kp END           &kp COMMA     &kp N7        &kp N8        &kp N9        &kp LPAR      &kp RPAR
+     &kp LG(GRAVE) &kx KP_N1     &kp PG_UP     &kp DOWN      &kp PG_DN     &kp END           &kp COMMA     &kp N7        &kp N8        &kp N9        &kp LPAR      &kp RPAR
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                                &kp LALT      &trans        &kp UNDER         &kp DOT       &trans        &hm LALT N0
 //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -150,7 +150,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp CRRT      &kp AMPS      &kp SQT       &kp DQT       &kp COLN      &kp SEMI          &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL     &kp PIPE      &kp NUBS      &kp LT        &kp GT        &kp QMARK         &ru_yeyo      &ru_tone      &tog DEF      &tog RUKB     &kppnd        &kp LSHFT
+     &kp LCTRL     &kp PIPE      &kp NUBS      &kp LT        &kp GT        &kp QMARK         &kx KP_N1     &ru_tone      &trans        &trans        &kppnd        &kp LSHFT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                                &trans        &mo ADJ       &kp UNDER         &trans        &trans        &kp LALT
 //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
