@@ -58,6 +58,18 @@
     };
 };
 
+/ {
+    macros {
+        kp_at: kp_at {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings  = <&macro_press &kp LALT>, <&macro_tap &kp KP_N6 &kp KP_N4>, <&macro_release &kp LALT>
+        };
+    };
+};
+
 
 / {
         keymap {
@@ -75,9 +87,9 @@
 //                            '--------+---------+---------'       '-------+---------+---------'
 
                         bindings = <
-     &kp ESC    &kp Q     &kp W    &kp E   &kp R  &hm BSLH T       &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSPC
-     &kp LSHFT   &kp A  &kp S     &kp D    &kp F   &kp G       &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp ENTER
-     &hm LCTRL TAB  &kp Z  &kp X     &kp C    &kp V   &kp B       &kp N      &hm RBKT M     &kp COMMA  &kp DOT  &kp LBKT  &kp SQT
+     &kp ESC        &kp Q  &kp W    &kp E   &kp R  &hm BSLH T       &kp Y      &kp U          &kp I      &kp O    &kp P     &kp BSPC
+     &kp LSHFT      &kp A  &kp S    &kp D   &kp F  &kp G            &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp ENTER
+     &hm LCTRL TAB  &kp Z  &kp X    &kp C   &kp V  &kp B            &kp N      &hm RBKT M     &kp COMMA  &kp DOT  &kp LBKT  &kp SQT
                          &kp LWIN  &mo LWR  &kp SPACE              &kp SPACE  &mo RSE  &kp LALT
                         >;
                 };
@@ -136,7 +148,7 @@
                         bindings = <
    &kp GRAVE  &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT        &kp F1    &kp F2     &kp F3      &kp F4  &kp F5  &kp F6
    &kp CRRT   &kp AMPS  &kp SQT  &kp DQT  &kp COLN &kp SEMI         &kp F7    &kp F8     &kp F9      &kp F10 &kp F11 &kp F12
-   &kp LSHFT  &kp PIPE  &kp NUBS &kp LT   &kp GT   &kp QMARK        &kp NUHS  &kp TILDE  &kp TILDE2  &trans  &trans  &kp LSHFT
+   &kp LSHFT  &kp PIPE  &kp NUBS &kp LT   &kp GT   &kp QMARK        &kp NUHS  &kp TILDE  &kp TILDE2  &kp_at  &trans  &kp LSHFT
                               &trans         &mo ADJ   &kp UNDER           &trans  &trans  &trans
                         >;
                 };
