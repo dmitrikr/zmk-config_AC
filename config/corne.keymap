@@ -72,7 +72,7 @@
             bindings  = <&macro_press &kp LALT>, <&macro_tap &macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>, <&macro_release &kp LALT>;
         };
 
-        kppnd: kx {
+        kx: kx {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             wait-ms = <20>;
