@@ -63,7 +63,7 @@
         kpa: kpa {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
-            wait-ms = <20>;
+            wait-ms = <40>;
             tap-ms = <40>;
             bindings  = <&macro_press &kp LALT>, <&macro_tap &macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>, <&macro_release &kp LALT>;
         };
@@ -71,7 +71,7 @@
         kppnd: kppnd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
+            wait-ms = <40>;
             tap-ms = <40>;
             bindings  = <&macro_press &kp LALT>, <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>, <&macro_release &kp LALT>;
         };
@@ -79,7 +79,7 @@
         kpdoot: kpdoot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
+            wait-ms = <40>;
             tap-ms = <40>;
             bindings  = <&macro_press &kp LALT>, <&macro_tap     &kp KP_N4 &kp KP_N6>, <&macro_release &kp LALT>;
         };
@@ -146,7 +146,7 @@
    &kp LPAR      &kp RPAR   &kp LBKT   &kp RBKT  &kp LBRC   &kp RBRC       &kp KP_ASTERISK  &kp KP_N1 &kp KP_N2   &kp KP_N3   &kp MINUS     &kp KP_SLASH       
    &kp LSHFT     &kp F4     &kp LEFT   &kp UP    &kp RIGHT  &kp HOME       &kp EQUAL        &kp KP_N4 &kp KP_N5   &kp KP_N6   &kp KP_PLUS   &kp BSLH
    &kp LG(GRAVE) &kp LC(N)  &kp PG_UP  &kp DOWN  &kp PG_DN  &kp END        &kp COMMA     &kp KP_N7 &kp KP_N8   &kp KP_N9   &kp LPAR      &kp RPAR
-                                &kp LALT   &trans    &kp UNDER             &kp DOT   &trans   &kp KP_N0
+                                &kp LALT   &trans    &kp UNDER             &kp DOT   &trans   &hm LALT KP_N0
                         >;
                 };
   
