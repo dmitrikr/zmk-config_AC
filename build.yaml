@@ -7,19 +7,14 @@
 # board: [ "nice_nano_v2" ]
 # shield: [ "corne_left", "corne_right" ]
 
-#include:
-#  - board: nrfmicro_13
-#    shield: corne_left
-#  - board: nrfmicro_13
-#    shield: corne_right
-#  - board: nice_nano_v2
-#    shield: corne_left
-#  - board: nice_nano_v2
-#    shield: corne_right
+include:
+  - board: nrfmicro_13
+    shield: corne_left
+  - board: nrfmicro_13
+    shield: corne_right
+  - board: nice_nano_v2
+    shield: corne_left
+  - board: nice_nano_v2
+    shield: corne_right
 
 
-on: [push, pull_request, workflow_dispatch]
-
-jobs:
-  build:
-    uses: urob/zmk/.github/workflows/build-user-config.yml@build-with-submodules
